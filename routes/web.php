@@ -26,3 +26,13 @@ Route::get('/home', function () {
     echo "This is the home middleware";
 });
 Route::get('/contact-as-with-new-computers', [ContactController::class, 'index'])->middleware('check')->name('con');
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
