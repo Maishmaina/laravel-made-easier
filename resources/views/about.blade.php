@@ -42,7 +42,7 @@
                 </div>
                 <h1>About As</h1>
                 <a href="{{url('/')}}">Home</a>|
-                <a href="{{URL::to('/contact')}}">About</a>|
+                <a href="{{URL::to('/about')}}">About</a>|
                 <a href="{{ route('con')}}">Contact</a>|
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">

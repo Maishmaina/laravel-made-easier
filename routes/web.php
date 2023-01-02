@@ -12,7 +12,6 @@ use App\Http\Controllers\ContactController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -20,8 +19,6 @@ Route::get('/', function () {
 Route::get('/about',function(){
     return view('about');
 });
-
-
 Route::get('/home', function () {
     echo "This is the home middleware";
 });
